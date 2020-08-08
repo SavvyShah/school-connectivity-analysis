@@ -3,13 +3,11 @@ import * as d3 from 'd3'
 
 import './App.css'
 
-import BangaloreRoutes from './data/routes.json'
-import BangaloreBusStops from './data/bus_stops.json'
-import BangaloreSchools from './data/schools.json'
+import BangaloreRegionBoundaries from './data/bangalore_region_boundaries.json'
 import BangaloreBoundaries from './data/bangalore_boundaries.json'
 
 function App() {
-  const [dimensions, setDimensions] = useState({ width: 600, height: 600 })
+  const [dimensions, setDimensions] = useState({ width: 1000, height: 1000 })
   const { width, height } = dimensions
 
   useEffect(() => {
@@ -24,18 +22,29 @@ function App() {
     var geoGenerator = d3.geoPath().projection(projection)
 
     // Join the FeatureCollection's features array to path elements
-    var u = d3
+    var map = d3
       .select('svg>g#bangalore-map')
       .selectAll('path')
       .data(BangaloreBoundaries.features)
 
     // Create path elements and update the d attribute using the geo generator
-    u.enter().append('path').attr('d', geoGenerator)
+    map.enter().append('path').attr('d', geoGenerator)
+    // Join the FeatureCollection's features array to path elements
+    var region = d3
+      .select('svg>g#bangalore-region-boundaries')
+      .selectAll('path')
+      .data(BangaloreRegionBoundaries.features)
+
+    // Create path elements and update the d attribute using the geo generator
+    region.enter().append('path').attr('d', geoGenerator)
   }, [width, height])
   return (
     <>
       <svg width={width} height={height}>
         <g id="bangalore-map"></g>
+      </svg>
+      <svg width={width} height={height}>
+        <g id="bangalore-region-boundaries"></g>
       </svg>
     </>
   )
