@@ -16,7 +16,9 @@ function App() {
     var projection = d3
       .geoMercator()
       .translate([width / 2, height / 2])
+      // scale to zoom on the center
       .scale(Math.pow(10, 5))
+      //coordinates of bangalore
       .center([77.624566, 12.981599])
 
     var geoGenerator = d3.geoPath().projection(projection)
