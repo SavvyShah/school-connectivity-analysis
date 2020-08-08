@@ -7,7 +7,7 @@ import BangaloreRegionBoundaries from './data/bangalore_region_boundaries.json'
 import BangaloreBoundaries from './data/bangalore_boundaries.json'
 
 function App() {
-  const [dimensions, setDimensions] = useState({ width: 1000, height: 1000 })
+  const [dimensions, setDimensions] = useState({ width: 1200, height: 1200 })
   const { width, height } = dimensions
 
   useEffect(() => {
@@ -15,7 +15,7 @@ function App() {
       .geoMercator()
       .translate([width / 2, height / 2])
       // scale to zoom on the center
-      .scale(Math.pow(10, 5))
+      .scale(Math.pow(3, 11))
       //coordinates of bangalore
       .center([77.624566, 12.981599])
 
@@ -29,14 +29,6 @@ function App() {
 
     // Create path elements and update the d attribute using the geo generator
     map.enter().append('path').attr('d', geoGenerator)
-    // Join the FeatureCollection's features array to path elements
-    var region = d3
-      .select('svg>g#bangalore-region-boundaries')
-      .selectAll('path')
-      .data(BangaloreRegionBoundaries.features)
-
-    // Create path elements and update the d attribute using the geo generator
-    region.enter().append('path').attr('d', geoGenerator)
   }, [width, height])
   return (
     <>
