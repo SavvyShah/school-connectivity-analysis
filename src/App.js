@@ -25,7 +25,7 @@ function App() {
 
     // Join the FeatureCollection's features array to path elements
     var u = d3
-      .select('svg')
+      .select('svg>g#bangalore-map')
       .selectAll('path')
       .data(BangaloreBoundaries.features)
 
@@ -34,7 +34,9 @@ function App() {
   }, [width, height])
   return (
     <>
-      <svg width={width} height={height}></svg>
+      <svg width={width} height={height}>
+        <g id="bangalore-map"></g>
+      </svg>
     </>
   )
 }
