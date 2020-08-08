@@ -1,12 +1,12 @@
 const fs = require('fs')
 const BangaloreBusStops = require('./data/bus_stops.json')
 
-const BusStops = {
-  propertyName: 'Bangalore Bus stop coordinates',
-  coordinates: [],
-}
+const BusStopsCoords = []
 
 BangaloreBusStops.features.forEach((feature) => {
-  BusStops.coordinates.push(feature.geometry.coordinates)
+  BusStopsCoords.push({
+    0: feature.geometry.coordinates[0],
+    1: feature.geometry.coordinates[1],
+  })
 })
-fs.writeFileSync('./data/bus_stops_coords.json', JSON.stringify(BusStops))
+fs.writeFileSync('./data/bus_stops_coords.json', JSON.stringify(BusStopsCoords))
