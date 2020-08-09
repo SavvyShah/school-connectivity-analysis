@@ -1,3 +1,17 @@
 #bangalore-map {
   fill: #cccccc;
 }
+.color-scale-rect {
+  width: 50;
+  height: 10;
+}
+h1,
+h2 {
+  text-align: center;
+}
+h2 {
+  font-weight: 500;
+}
+svg {
+  margin-left: 5vw;
+}

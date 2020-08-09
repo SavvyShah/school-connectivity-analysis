@@ -35,5 +35,10 @@ export default function useBangaloreMap({ width, height, selector }) {
       //Assign each path to it's ward name and region name(ASS_CONST1)
       .attr('id', (d) => cleanClassAndID(d.properties.WARD_NAME))
       .attr('class', (d) => cleanClassAndID(d.properties.ASS_CONST1))
+      // Add a tool tip to your graph
+      .append('title')
+      .attr('x', (d) => projection([d.lon, d.lat])[0])
+      .attr('y', (d) => projection([d.lon, d.lat])[1])
+      .text((d) => d.properties.ASS_CONST1)
   }, [width, height, selector])
 }
