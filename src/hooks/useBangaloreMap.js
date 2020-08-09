@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import BangaloreRegionBoundaries from '../data/bangalore_region_boundaries.json'
 
 import * as d3 from 'd3'
+import cleanClassAndID from '../utils/cleanClassAndID'
 
 // selector: CSS selector selecting Svg element or any
 // width: width of Svg element or selected element using selector
@@ -32,7 +33,7 @@ export default function useBangaloreMap({ width, height, selector }) {
       .append('path')
       .attr('d', geoGenerator)
       //Assign each path to it's ward name and region name(ASS_CONST1)
-      .attr('id', (d) => d.properties.WARD_NAME)
-      .attr('class', (d) => d.properties.ASS_CONST1)
+      .attr('id', (d) => cleanClassAndID(d.properties.WARD_NAME))
+      .attr('class', (d) => cleanClassAndID(d.properties.ASS_CONST1))
   }, [width, height, selector])
 }
