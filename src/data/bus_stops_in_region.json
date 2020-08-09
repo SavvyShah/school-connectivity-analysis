@@ -1,0 +1,293 @@
+{
+  "B.T.M. Layout": [],
+  "Bangalore South": [],
+  "Basavanagudi": [
+    { "name": "Southend Circle,BASAVANAGUDI,BESIDE GANDHARVA FAMILY BAR" },
+    { "name": "Nagasandra Circle,BASAVANAGUDI,BESIDE PROSPER PARK APPARTMENT" },
+    {
+      "name": "Netakallappa Circle,BASAVANAGUDI,OPPOSITE OF GURU RAGHAVENDRA BANK"
+    },
+    {
+      "name": "Basavanagudi Police Station,BASAVANAGUDI,BESIDE ACHIEVE SCHOOL OF EDUCATION"
+    },
+    { "name": "Gandhi Bazaar,BASAVANAGUDI,BESIDE ASHOKA PLAZA" },
+    { "name": "Ramakrishna Ashrama,BASAVANAGUDI,OPPOSITE INDUS BANK" },
+    { "name": "Vijaya College,BASAVANAGUDI,OPPOSITE OF INFORMATICS" },
+    { "name": "RV Teachers College,BASAVANAGUDI,BESIDE MEGA AGENSIS" },
+    { "name": "Tata Silk Farm,BASAVANAGUDI,IN FRONT OF GARADI APARTMENT" },
+    { "name": "Basavanagudi Police Station" },
+    { "name": "Gunasheela Hospital,BASAVANAGUDI,OPPOSITE OF SOWMYA SPRINGS" }
+  ],
+  "Bommana Halli": [
+    { "name": "Bommanahalli" },
+    { "name": "Bommanahalli,BOMMANAHALLI,BESIDE OPEN AREA" }
+  ],
+  "Byatarayanapura": [
+    { "name": "Byatarayana Pura,BYATARAYANAPURA,BESIDE GOVERNMENT SCHOOL" },
+    {
+      "name": "Byatarayana Pura,BYATARAYANAPURA,BESIDE B.B.M.P PUBLIC SERVICE CENTER"
+    },
+    {
+      "name": "Timber Yard Layout,BYATARAYANAPURA,OPPOSITE OF NAGADEVATHA TEMPLE"
+    }
+  ],
+  "C.V. Ramannagar (SC)": [
+    { "name": "City Civil Court" },
+    {
+      "name": "Ladies Hostel University Campus,BANGALORE UNIVERSITY,IN FRONT OF CIVIL ENGINEERING DEPARTMENT UNIVERSITY"
+    },
+    { "name": "CGHS Nagavar Palya,C.V.RAMAN NAGARA,OPPOSITE OF PLAY GROUND" },
+    { "name": "DRDO Qts,C.V.RAMAN NAGARA,IN FRONT OF MES SERVICE CENTER NO-1" },
+    {
+      "name": "LRDE,C.V.RAMAN NAGARA,IN FRONT OF ELECTRONIC & RADAR DEVELOPMENT ESTABLISMENT"
+    },
+    {
+      "name": "CGHS,C.V.RAMAN NAGARA,OPPOSITE OF THE AERONAUTICAL SOCIETY OF INDIA"
+    },
+    {
+      "name": "CV Raman Nagara,C.V.RAMAN NAGARA,IN FRONT OF HAL ENGINE DIVISION"
+    }
+  ],
+  "Chamarajpet": [
+    {
+      "name": "Brundavananagara Jinke Park,Chamarajpet,Rajiv Gandhi Sports Complex"
+    }
+  ],
+  "Chickpet": [],
+  "Dasarahalli": [
+    { "name": "T Dasarahalli" },
+    {
+      "name": "Widia School Bagalagunte,T.DASARAHALLI,BESIDE ESHWARI MEDICALS"
+    },
+    { "name": "Magadi Road Dasarahalli" },
+    { "name": "8th Mile T Dasarahalli,8TH MILE,BESIDE A.K.SCOOTER WORKS" },
+    { "name": "8th Mile T Dasarahalli" },
+    { "name": "8th Mile T Dasarahalli,8TH MILE,BESIDE PETROL BUNK" },
+    { "name": "Widia School Bagalagunte,T.DASARAHALLI,BESIDE NANDINI TRADERS" },
+    { "name": "DASARAHALLI,DASARAHALLI,BESIDE ANNAPORNA TEMPLE" },
+    { "name": "Mariyappana Palya,DASARAHALLI,OPPOSITE OF JYOTHI BAKERY" }
+  ],
+  "Gandhi Nagar": [
+    {
+      "name": "Sanjay Gandhi nagar,LAKSHMIDEVI NAGARA,OPPOSITE OF VEENA ENGLISH SCHOOL"
+    },
+    { "name": "Rockline Studio Rajiv Gandhi Nagara,BESIDE OPEN AREA" }
+  ],
+  "Govindaraja Nagar": [
+    {
+      "name": "Govindaraj Nagara,GOVINDARAJA NAGARA,IN FRONT OF GOVINDARAJA SWAMY TEMPLE"
+    }
+  ],
+  "Hebbal": [
+    { "name": "Hebbala Bridge,HEBBALA,BESIDE LAKE" },
+    { "name": "Hebbala,HEBBALA,BESIDE LAKE" },
+    { "name": "Hebbal" },
+    {
+      "name": "Canara Bank Hebbala,FRAZER TOWN,IN FRONT OF V.R.SHABBIR AHMED STORES"
+    },
+    { "name": "Hebbala" },
+    { "name": "Hebbala Bridge,HEBBALA,OPPOSITE OF GAYATHRI LAKE FRONT" },
+    { "name": "Kempapura,HEBBALA,IN FRONT OF BHAVANI ENTERPRISES" },
+    { "name": "Hebbal,HEBBALA,BESIDE PITTY SHOP" }
+  ],
+  "Jaya Nagar": [
+    { "name": "RMS,SANJAYA NAGARA,BESIDE MAMATA HOSPITAL" },
+    { "name": "Sanjay Nagara,SANJAYA NAGARA,BESIDE NANDINI MILK PARLOUR" }
+  ],
+  "K.R. Puram": [],
+  "Mahadevapura": [
+    { "name": "Mahadevapura,MAHADEVAPURA,IN FRONT OF PETTY SHOP" },
+    { "name": "Mahadevapura,MAHADEVAPURA,IN FRONT OF MANJUNATAHA HOTEL" },
+    { "name": "Mahadevapura Cross,HOODI,IN FRONT OF BASAVESHWARA KHANAVALI" },
+    {
+      "name": "Mahadevapura Cross,MAHADEVAPURA,IN FRONT OF MTB MANGALAMERU KALAYANA MANTAPA"
+    }
+  ],
+  "Mahalakshmi Layout": [
+    {
+      "name": "Mahalakshmi Layout,MAHALAKSHMI LAYOUT,BESIDE BMTC MAIN BUS STAND"
+    },
+    { "name": "Srinivasa Temple,MAHALAKSHMI LAYOUT,IN FRONT OF BBMP PARK" },
+    {
+      "name": "Mahalakshmi Layout Entarence,MAHALAKSHMI LAYOUT,IN FRONT OF SAPTHAGIRI CHOULTRY"
+    },
+    { "name": "Mahalakshmi Layout Cross" },
+    {
+      "name": "Mahalakshmi Layout Entarence,RAJAJINAGARA 1ST BLOCK,BESIDE EUREKA FORBES LTD"
+    }
+  ],
+  "Malleswaram": [
+    { "name": "Malleshwaram Circle,MALLESHWARAM,BESIDE R.R.GOLD PALACE" },
+    { "name": "Malleshwaram 8th Cross,MALLESHWARAM,BESIDE FLOWER MARKET" },
+    { "name": "Malleshwaram 15th Cross,MALLESHWARAM,BESIDE SAI MANDIR" },
+    {
+      "name": "Malleshwaram 18th Cross,MALLESHWARAM,BESIDE KARNATAKA EXAMINATION AUTHORITY"
+    },
+    {
+      "name": "Malleshwaram Circle,KC GENERAL HOSPITAL,BESIDE MALLESHWARAM GROUND"
+    },
+    { "name": "Link Road,MALLESHWARAM,BESIDE PRASAD STRORES" },
+    { "name": "Mysore Lamps,MALLESHWARAM,OPPOSITE OF MYSORE LAMPS FACTORY" },
+    {
+      "name": "Malleshwaram 18th Cross,MALLESHWARAM,BESIDE RATHNAM COMPLEX & BABA BED SHOP"
+    },
+    {
+      "name": "Malleshwaram 13th Cross,MALLESHWARAM,BESIDE JANATHA CO-OPERATIVE BANK"
+    },
+    {
+      "name": "Malleshwaram 8th Cross,MALLESHWARAM,BESIDE R.V.APARTMENTS & PUSHPAYANI MEDICALS"
+    }
+  ],
+  "Padmanaba Nagar": [
+    { "name": "Prarthana School,PADMANABHA NAGARA" },
+    {
+      "name": "Padmanabha Nagara,PADMANABHA NAGARA,OPPOSITE OF STATE BANK OF INDIA"
+    },
+    {
+      "name": "Padmanabha Nagara Rock,PADMANABHA NAGARA,IN FRONT OF B.B.M.P.WARD OFFICE, PADMANABHA NAGARA"
+    },
+    { "name": "Padmanabhanagara Circle" }
+  ],
+  "Pulakeshi Nagar (SC)": [],
+  "Rajaji Nagar": [
+    {
+      "name": "Rajaji Nagara Ramamandira,RAJAJI NAGARA,OPPOSITE OF SRI RAMA TEMPLE"
+    },
+    {
+      "name": "Rajaji Nagar Old Police station,RAJAJINAGARA,BESIDE SAHITYA LOKA BOOK HOUSE"
+    },
+    {
+      "name": "Rajaji Nagar 1st Block,RAJAJINAGARA,OPPOSITE OF DIACON HOSPITAL"
+    },
+    {
+      "name": "Canara Bank Rajaji Nagara,RAJAJINAGARA,BESIDE KULAKARNI CLINIC"
+    },
+    {
+      "name": "Rajaji Nagara ESI Hospital,RAJAJINAGARA 2ND BLOCK,BESIDE ESI HOSPITAL"
+    },
+    { "name": "Dhobhi Ghatt,RAJAJI NAGARA,OPPOSITE OF BWSSB SERVICE STATION" }
+  ],
+  "Rajarajeswari Nagar": [
+    { "name": "Rajarajeshwarinagara Gate" },
+    {
+      "name": "Rajarajeshwari Temple,RAJESHWARI NAGARA,OPPOSITE OF RAJA RAJESHWARI TEMPLE"
+    },
+    {
+      "name": "Rajarajeshwari Medical College,ANCHEPALYA MYSORE ROAD,IN FRONT OF RAJA RAJESWARI MEDICAL COLLEGE AND HOSPITAL"
+    },
+    {
+      "name": "Ramohalli Cross,KUMBALAGUDU,IN FRONT OF RAJARAJESHWARI COLLEGE OF ENGINEERING"
+    },
+    {
+      "name": "Ramohalli Cross,KUMBALAGUDU,IN FRONT OF RAJARAJESHWARI DENTAL COLLEGE & HOSPITAL"
+    },
+    {
+      "name": "Rajarajeshwarinagara Gate,RAJA RAJESHWARI NAGARA,OPPOSITE OF GOPALAN MALL ARCADE"
+    }
+  ],
+  "Sarvagna Nagar": [],
+  "Shanthi Nagar": [
+    {
+      "name": "Shanthi Nagara Bus Station,SHANTHI NAGAR,OPPOSITE TO SHANTHINAGAR TTMC"
+    },
+    { "name": "Shanthi Nagara Bus Station" },
+    {
+      "name": "Nanjappa Circle,SHANTHI NAGARA,OPPOSTIE OF KARNATAKA HOUSING ASSOCIATION"
+    },
+    { "name": "Akkithimmana halli,SHANTHI NAGARA,IN FORNT OF METRO POLES" },
+    { "name": "Chamundi Nagara Magadi Road,SHANTHI NAGARA,BESIDE OPEN AREA" },
+    { "name": "Shanthinagara,SHANTHI NAGARA,BESIDE ASHWATHA KHATTE" }
+  ],
+  "Shivaji Nagar": [
+    { "name": "Shivajinagar Bus Station,SHIVAJI NAGARA,BESIDE BMTC BUS STAND" },
+    {
+      "name": "Bamboo Bazaar,SHIVAJI NAGARA,BESIDE PRESTIGE BUILDING DEMOLISHER"
+    }
+  ],
+  "Vijaya Nagar": [
+    { "name": "Income Tax Layout,VIJAYANAGARA,BESIDE A.M.HOSPITAL" },
+    { "name": "Vijayanagara TTMC,TTMC" },
+    { "name": "Maruthi mandira,VIJAYANAGARA,BESIDE MATHA AIR TRAVELS" },
+    { "name": "Vijayanagara,VIJAYANAGARA,IN FRONT OF INDRAPRASTHA HOTEL" },
+    { "name": "Manu Vana Vijayanagara,VIJAYANAGARA,BESIDE STATE BANK INDIA" },
+    {
+      "name": "Saraswathi Nagara Vijayanagara,SARASWATHI NAGARA,IN FRONT OF VIJAYANAGARA POLICE OUT POST"
+    },
+    { "name": "Prashanthanagar,VIJAYANAGARA,OPPOSITE OF SHOBA NURSING HOME" },
+    { "name": "Vijayanagara,VIJAYANAGARA,BESIDE OM ARCADE, SONY SHOW ROOM" },
+    { "name": "Maruthi mandira,VIJAYANAGARA,BESIDE BUNNY BAKERY" },
+    {
+      "name": "Vijayanagara TTMC,REMCO LAYOUT, VIJAYANAGARA,BESIDE DR. SHETTY MATERNITY CLINIC"
+    },
+    {
+      "name": "Marenahalli,MARENAHALLI, VIJAYANAGARA,IN FRONT OF MANJUNATHA PROVISION STORES"
+    },
+    { "name": "Hampinagara 7th Cross,VIJAYANAGARA,BESIDE GOMINI MEDICALS" },
+    { "name": " Hampinagara 7th Main,VIJAYANAGARA,BESIDE MRUDULA MEDICALS" },
+    {
+      "name": "Saraswathi Nagara Vijayanagara Bank Colony,POOJAPPA LAYOUT,NEAR BY VISHVESHWARAYA CREDIT CO-OPERATIVE BANK"
+    }
+  ],
+  "Yelahanka": [
+    { "name": "Yelahanka Satelite Town 5th Phase" },
+    { "name": "Yelahanka Bakery" },
+    { "name": "Yelahanka Satellite Town" },
+    { "name": "Yelahanka Police Station" },
+    { "name": "Yelahanka Satelite Town" },
+    {
+      "name": "Dairy Circle Yalahanka New Town,YELAHANKA NEW TOWN,BESIDE DAZZLE SUPER MARKET"
+    },
+    { "name": "Atturu Layout Yelahanka Road,ATTUR LAYOUT,BESIDE OPEN AREA" },
+    { "name": "Yelahanka,YELAHANKA,BESIDE WATER TANK" },
+    { "name": "Kogilu Cross Kannur,YELAHANKA,BESIDE OPEN AREA" },
+    {
+      "name": "Maruthi Nagara Kannur Road,YELAHANKA,BESIDE SRINIVASA MEDICALS"
+    },
+    {
+      "name": "Venkatala,YELAHANKA,IN FRONT OF MARUTI SUZIKI BIMAL AUTO AGENCY"
+    },
+    { "name": "Kendriya Vihara Yelahanka" },
+    { "name": "YELAHANKA" },
+    { "name": "Anantapura Gate,YELAHANKA,IN FRONT OF D.G.PLANT STAFF COLONY" },
+    {
+      "name": "Puttenahalli Yelhanka,YELAHANKA,IN FRONT OF BYRAVESWARA TEMPLE"
+    },
+    { "name": "Wheel And Axle Plant,YELAHANKA,IN FRONT OF RAILWAY HOSPITAL" },
+    {
+      "name": "Escorts Yalahanka Road,YELAHANKA,BESIDE FEDERAL MOGUL GOETZE INDIA"
+    },
+    { "name": "Suradenapura Yelahanka Road,OPPOSITE OF G.K. BAKERY & SWEETS" },
+    { "name": "Yelahanka,YELAHANKA,BESIDE RAJU MEDICALS" },
+    { "name": "Kogilu Cross Devanahalli Main Road,YELAHANKA,BESIDE OPEN AREA" },
+    { "name": "Palanahalli Gate,YELAHANKA,IN FRONT OF ANJANEYA TEMPLE" },
+    { "name": "Yelahanka,YELAHANKA,OPPOSITE OF H.D.F.C.BANK" },
+    {
+      "name": "Atturu Layout Yelahanka Road,ATTUR LAYOUT,BESIDE SRI RANGANATHA ENTERPRISES"
+    },
+    { "name": "Yelahanka Satelite Town 4th Phase" }
+  ],
+  "Yeshwantpura": [
+    { "name": "Yeshawanthapura TTMC" },
+    {
+      "name": "Kamala Neharu Extension,YESHAWANTHAPURA,IN FRONT OF NEW STAR BEDDING HOUSE"
+    },
+    {
+      "name": "Yeshwanthpura Market,YESHAWANTHAPURA,IN FRONT OF STATE BANK OF INDIA"
+    },
+    {
+      "name": "Yeshwanthpura Railway Station,YESHAWANTHAPURA,IN FRONT OF YESHAWANTHAPURA RAILWAY STATION"
+    },
+    {
+      "name": "Yeshwanthpura Circle,YESHAWANTHAPURA,BESIDE YESHAWANTHAPURA POLICE STATION"
+    },
+    {
+      "name": "Yeshwanthpura Tollgate,YESHAWANTHAPURA,OPPOSITE OF KENDRIYA VIDYALAYA"
+    },
+    {
+      "name": "Yeshwanthpura Tollgate,YESHAWANTHAPURA,IN FRONT OF KENDRIYA VIDYALAYA"
+    },
+    {
+      "name": "Yeshwanthpura Circle,YESHAWANTHAPURA,OPPOSITE YESHAWANTHAPURA POLICE STATION"
+    }
+  ]
+}
