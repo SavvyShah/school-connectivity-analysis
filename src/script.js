@@ -1,12 +1,21 @@
 const fs = require('fs')
-const BangaloreBusStops = require('./data/bus_stops.json')
+const BangaloreRegionBoundaries = require('./data/schools_in_region.json')
 
-const BusStopsCoords = []
+// const BangaloreRegions = {}
 
-BangaloreBusStops.features.forEach((feature) => {
-  BusStopsCoords.push({
-    0: feature.geometry.coordinates[0],
-    1: feature.geometry.coordinates[1],
-  })
+// BangaloreRegionBoundaries.features.forEach((feature) => {
+//   BangaloreRegions[feature.properties.ASS_CONST1] = {}
+// })
+// fs.writeFileSync(
+//   './data/schools_in_region.json',
+//   JSON.stringify(BangaloreRegions)
+// )
+const Regions = {}
+
+BangaloreRegionBoundaries.forEach((school) => {
+  Regions[school] = {}
 })
-fs.writeFileSync('./data/bus_stops_coords.json', JSON.stringify(BusStopsCoords))
+
+fs.writeFileSync('./data/schools_in_region.json', JSON.stringify(Regions))
+
+const RegexStr = /(B.T.M. Layout)|(Bangalore South)|(Basavanagudi)|(Bommana Halli)|(Byatarayanapura)|(C.V. Ramannagar (SC))|(Chamarajpet)|(Chickpet)|(Dasarahalli)|(Gandhi Nagar)|(Govindaraja Nagar)|(Hebbal)|(Jaya Nagar)|(K.R. Puram)|(Mahadevapura)|(Mahalakshmi Layout)|(Malleswaram)|(Padmanaba Nagar)|(Pulakeshi Nagar (SC))|(Rajaji Nagar)|(Rajarajeswari Nagar)|(Sarvagna Nagar)|(Shanthi Nagar)|(Shivaji Nagar)|(Vijaya Nagar)|(Yelahanka)|(Yeshwantpura)/
