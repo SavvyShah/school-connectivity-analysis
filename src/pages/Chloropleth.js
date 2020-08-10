@@ -33,6 +33,7 @@ function Chloropleth() {
       setModalContent(getContent(this))
       setDisplayModal(true)
     })
+    d3.select('#school-g').attr('fill', 'fill: rgba(0,0,0,0.2);')
   }, [])
   return (
     <>

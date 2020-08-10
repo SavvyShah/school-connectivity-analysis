@@ -37,6 +37,6 @@ export default function useBangaloreMap({ width, height, selector }) {
       .append('title')
       .attr('x', (d) => projection([d.lon, d.lat])[0])
       .attr('y', (d) => projection([d.lon, d.lat])[1])
-      .text((d) => d.properties.ASS_CONST1)
+      .text((d) => `Region: ${d.properties.ASS_CONST1}`)
   }, [width, height, selector])
 }

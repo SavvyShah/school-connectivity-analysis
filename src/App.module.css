@@ -14,3 +14,6 @@
 .row {
   display: flex;
 }
+#school-g {
+  transform: translate(-55px, -30px);
+}

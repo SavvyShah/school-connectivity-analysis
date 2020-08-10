@@ -4,7 +4,6 @@ import * as d3 from 'd3'
 import './BusRoutes.css'
 
 import BusStopRoutes from '../data/routes.json'
-import BangaloreRegionBoundaries from '../data/bangalore_region_boundaries.json'
 
 import useSchools from '../hooks/useSchools'
 import useBangaloreMap from '../hooks/useBangaloreMap'
@@ -40,7 +39,7 @@ function BusRoutes() {
     const colorScale = d3
       .scaleLinear()
       .domain([0, maxDistance])
-      .range(['rgb(0,100,200)', 'rgb(0,0,100)'])
+      .range(['rgb(250,0,0)', 'rgb(0,0,250)'])
 
     const geoGenerator = d3.geoPath().projection(projection)
     map
