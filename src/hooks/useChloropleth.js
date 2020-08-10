@@ -58,9 +58,6 @@ function useChloropleth(width) {
         .attr('y', 33)
         .attr('fill', 'black')
         .text((d) => '|' + d)
-      d3.select('svg').on('click', function () {
-        d3.select(this)
-      })
     }
   }, [width])
 }
