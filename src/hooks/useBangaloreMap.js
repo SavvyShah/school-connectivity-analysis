@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 
 import BangaloreRegionBoundaries from '../data/bangalore_region_boundaries.json'
 
@@ -16,9 +16,7 @@ export default function useBangaloreMap({ width, height, selector }) {
       .geoMercator()
       .translate([width / 2, height / 2])
       // scale to zoom on the center
-      .scale(Math.pow(5, 7))
-      //coordinates of bangalore
-      .center([77.624566, 12.981599])
+      .fitSize([width, height], BangaloreRegionBoundaries)
 
     const geoGenerator = d3.geoPath().projection(projection)
 
@@ -26,7 +24,7 @@ export default function useBangaloreMap({ width, height, selector }) {
     // Create path elements and update the d attribute using the geo generator
     map
       .append('g')
-      .attr('id', '12-bng-map')
+      .attr('id', 'bng-map')
       .selectAll('path')
       .data(BangaloreRegionBoundaries.features)
       .enter()
