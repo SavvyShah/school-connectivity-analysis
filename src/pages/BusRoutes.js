@@ -6,6 +6,7 @@ import './BusRoutes.css'
 import BusStopRoutes from '../data/routes.json'
 import BangaloreRegionBoundaries from '../data/bangalore_region_boundaries.json'
 
+import useSchools from '../hooks/useSchools'
 import useBangaloreMap from '../hooks/useBangaloreMap'
 
 function BusRoutes() {
@@ -15,6 +16,11 @@ function BusRoutes() {
   }
   const { width, height } = dimensions
   useBangaloreMap({
+    width,
+    height,
+    selector: '#bus-routes>svg',
+  })
+  useSchools({
     width,
     height,
     selector: '#bus-routes>svg',
@@ -52,9 +58,40 @@ function BusRoutes() {
         return (d.properties.trips / maxTrips) * 3
       })
       .attr('d', geoGenerator)
-      .on('mouseover', (d) => {
-        console.log(d)
-      })
+    d3.select('svg')
+      .append('g')
+      .selectAll('rect')
+      .data([
+        0,
+        maxDistance / 4,
+        maxDistance / 2,
+        (3 * maxDistance) / 4,
+        maxDistance,
+      ])
+      .enter()
+      .append('rect')
+      .attr('class', 'color-scale-rect')
+      .attr('fill', (d) => colorScale(d))
+      .attr('x', (d, i) => 80 * i + width - 500)
+      .attr('y', 10)
+      .attr('width', 80)
+      .attr('height', 10)
+    d3.select('svg')
+      .append('g')
+      .selectAll('text')
+      .data([
+        0,
+        maxDistance / 4,
+        maxDistance / 2,
+        (3 * maxDistance) / 4,
+        maxDistance,
+      ])
+      .enter()
+      .append('text')
+      .attr('x', (d, i) => 80 * i + width - 500)
+      .attr('y', 33)
+      .attr('fill', 'black')
+      .text((d) => '|' + d)
   }, [width, height])
   return (
     <>

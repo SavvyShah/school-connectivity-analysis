@@ -6,6 +6,5 @@ export default function maxValueInRegion(ThingsInRegion) {
         ? ThingsInRegion[region].length
         : maxValue
   }
-  console.log(maxValue)
   return maxValue
 }
