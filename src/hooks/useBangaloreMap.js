@@ -16,7 +16,7 @@ export default function useBangaloreMap({ width, height, selector }) {
       .geoMercator()
       .translate([width / 2, height / 2])
       // scale to zoom on the center
-      .scale(Math.pow(3, 11))
+      .scale(Math.pow(5, 7))
       //coordinates of bangalore
       .center([77.624566, 12.981599])
 

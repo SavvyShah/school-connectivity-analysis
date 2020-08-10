@@ -1,5 +1,6 @@
 #bangalore-map {
   fill: #cccccc;
+  transform: translate(0, -80);
 }
 .color-scale-rect {
   width: 50;
@@ -14,4 +15,8 @@ h2 {
 }
 svg {
   margin-left: 5vw;
+}
+.current {
+  stroke: black;
+  stroke-width: 3;
 }

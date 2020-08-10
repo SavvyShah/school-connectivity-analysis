@@ -7,8 +7,8 @@ import useChloropleth from './hooks/useChloropleth'
 
 function App() {
   const dimensions = {
-    width: 1200,
-    height: 1200,
+    width: 850,
+    height: 800,
   }
   const { width, height } = dimensions
 

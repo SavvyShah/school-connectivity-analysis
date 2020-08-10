@@ -58,6 +58,16 @@ function useChloropleth(width) {
         .attr('y', 33)
         .attr('fill', 'black')
         .text((d) => '|' + d)
+      // Note below places current class on all 'path' elements that have a parent 'g'
+      d3.selectAll('path')
+        .on('mouseover', function () {
+          this.parentElement.tagName === 'g' &&
+            d3.select(this).classed('current', true)
+        })
+        .on('mouseout', function () {
+          this.parentElement.tagName === 'g' &&
+            d3.select(this).classed('current', false)
+        })
     }
   }, [width])
 }
