@@ -1,28 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import './App.css'
+import styles from './App.module.css'
 
-import useBangaloreMap from './hooks/useBangaloreMap'
-import useChloropleth from './hooks/useChloropleth'
+import Chloropleth from './pages/Chloropleth'
+import BusRoutes from './pages/BusRoutes'
+
+const pages = {
+  chloropleth: 'chloropleth',
+  busRoutes: 'busRoutes',
+}
 
 function App() {
-  const dimensions = {
-    width: 850,
-    height: 800,
-  }
-  const { width, height } = dimensions
-
-  useBangaloreMap({
-    selector: 'svg#bangalore-map',
-    width: width,
-    height: height,
-  })
-  useChloropleth(width)
+  const [showPage, setShowPage] = useState(pages.chloropleth)
   return (
     <>
-      <h1>Distribution of bus stops in Bangalore</h1>
-      <h2>Number of bus stops per region</h2>
-      <svg id="bangalore-map" viewBox={`0 0 ${width} ${height}`}></svg>
+      <div className={styles.row}>
+        <button
+          className={styles.primaryBtn}
+          onClick={() => setShowPage(pages.chloropleth)}
+        >
+          Chloropleth
+        </button>
+        <button
+          className={styles.primaryBtn}
+          onClick={() => setShowPage(pages.busRoutes)}
+        >
+          Bus Routes
+        </button>
+      </div>
+      {showPage === pages.chloropleth && <Chloropleth />}
+      {showPage === pages.busRoutes && <BusRoutes />}
     </>
   )
 }

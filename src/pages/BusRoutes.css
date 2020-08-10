@@ -1,0 +1,25 @@
+#bng-map {
+  fill: #ccc;
+}
+.color-scale-rect {
+  width: 50;
+  height: 10;
+}
+h1,
+h2 {
+  text-align: center;
+}
+#bus-routes {
+  width: 70vw;
+  margin: auto;
+}
+#bus-routes > svg > g:nth-child(2) {
+  transform: translate(-100px, 50px);
+}
+h2 {
+  font-weight: 500;
+}
+.current {
+  fill: #0ea;
+  cursor: pointer;
+}

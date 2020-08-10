@@ -1,0 +1,16 @@
+.primaryBtn {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  background-color: #5cb85c;
+  color: white;
+  border: 1px solid #5cb85c;
+  border-radius: 5px;
+}
+.primaryBtn:active {
+  background-color: #388338;
+}
+.row {
+  display: flex;
+}

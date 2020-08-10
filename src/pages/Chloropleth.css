@@ -1,6 +1,5 @@
 #bangalore-map {
   fill: #cccccc;
-  transform: translate(0, -80);
 }
 .color-scale-rect {
   width: 50;
@@ -10,13 +9,14 @@ h1,
 h2 {
   text-align: center;
 }
+#wrapper-box {
+  width: 70vw;
+  margin: auto;
+}
 h2 {
   font-weight: 500;
 }
-svg {
-  margin-left: 5vw;
-}
 .current {
-  stroke: black;
-  stroke-width: 3;
+  fill: #0ea;
+  cursor: pointer;
 }
