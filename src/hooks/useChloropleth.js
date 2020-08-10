@@ -6,6 +6,9 @@ import BusStops from '../data/bus_stops_in_region.json'
 import cleanClassAndID from '../utils/cleanClassAndID'
 import maxValueInRegion from '../utils/maxValueInRegion'
 
+// Chloropleth map that shows bus stops in region
+// provides a legend of color used
+// when path elements are hovered provides a current class to use
 function useChloropleth(width) {
   useEffect(() => {
     if (d3.select('g>path')) {
@@ -13,6 +16,8 @@ function useChloropleth(width) {
       const colorScale = d3
         .scaleLinear()
         .domain([0, maxBusStops])
+        // configure the color here aqua -> darkblue currently
+        // legend printed would be updated accordingly
         .range(['rgb(0,200,200)', 'rgb(0,0,100)'])
 
       for (let region in BusStops) {
