@@ -20,7 +20,11 @@ function BusRoutes() {
     selector: '#bus-routes>svg',
   })
   useEffect(() => {
-    // Join the FeatureCollection's features array to path elements
+    const maxTrips = d3.max(BusStopRoutes.features, (d) => d.properties.trips)
+    const maxDistance = d3.max(
+      BusStopRoutes.features,
+      (d) => d.properties.distance
+    )
     const map = d3.select('#bus-routes>svg')
     const projection = d3
       .geoMercator()
@@ -29,8 +33,8 @@ function BusRoutes() {
       .fitSize([width, height], BusStopRoutes)
     const colorScale = d3
       .scaleLinear()
-      .domain([0, 100])
-      .range([`rgb(0,100,200)`, `rgb(0,0,100)`])
+      .domain([0, maxDistance])
+      .range(['rgb(0,100,200)', 'rgb(0,0,100)'])
 
     const geoGenerator = d3.geoPath().projection(projection)
     map
@@ -44,7 +48,8 @@ function BusRoutes() {
         return colorScale(d.properties.distance)
       })
       .attr('stroke-width', (d) => {
-        return d.properties.trips * 0.02
+        // the route with maximum trips would be 3px bold
+        return (d.properties.trips / maxTrips) * 3
       })
       .attr('d', geoGenerator)
       .on('mouseover', (d) => {
