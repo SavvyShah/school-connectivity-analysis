@@ -4,7 +4,9 @@ import styles from './App.module.css'
 
 import Chloropleth from './pages/Chloropleth'
 import BusRoutes from './pages/BusRoutes'
+
 import useSchools from './hooks/useSchools'
+import useBusStops from './hooks/useBusStops'
 
 const pages = {
   chloropleth: 'chloropleth',
@@ -13,15 +15,21 @@ const pages = {
 
 function App() {
   const [showPage, setShowPage] = useState(pages.chloropleth)
-  const [showSchool, setShowSchool] = useState(false)
+  const [showMarks, setShowSchool] = useState({ school: false, busStop: false })
   useSchools({
-    showSchool,
+    showSchool: showMarks.school,
+    height: 850,
+    width: 800,
+    selector: 'svg',
+  })
+  useBusStops({
+    showBusStops: showMarks.busStop,
     height: 850,
     width: 800,
     selector: 'svg',
   })
   const handleShowPage = (page) => {
-    setShowSchool(false)
+    setShowSchool({ school: false, busStop: false })
     setShowPage(page)
   }
   return (
@@ -41,9 +49,19 @@ function App() {
         </button>
         <button
           className={styles.primaryBtn}
-          onClick={() => setShowSchool(!showSchool)}
+          onClick={() =>
+            setShowSchool({ ...showMarks, school: !showMarks.school })
+          }
         >
           Toggle Schools
+        </button>
+        <button
+          className={styles.primaryBtn}
+          onClick={() =>
+            setShowSchool({ ...showMarks, busStop: !showMarks.busStop })
+          }
+        >
+          Toggle Bus Stops
         </button>
       </div>
       {showPage === pages.chloropleth && <Chloropleth />}
