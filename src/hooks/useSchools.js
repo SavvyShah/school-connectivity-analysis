@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 
 import Schools from '../data/schools.json'
+import BangaloreRegionBoundaries from '../data/bangalore_region_boundaries.json'
 
 import * as d3 from 'd3'
 
@@ -16,7 +17,7 @@ export default function useSchools({ width, height, selector, showSchool }) {
         .geoMercator()
         .translate([width / 2, height / 2])
         // scale to zoom on the center
-        .fitSize([width, height], Schools)
+        .fitSize([width, height], BangaloreRegionBoundaries)
 
       const geoGenerator = d3.geoPath().projection(projection)
 

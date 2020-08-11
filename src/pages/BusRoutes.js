@@ -4,6 +4,7 @@ import * as d3 from 'd3'
 import './BusRoutes.css'
 
 import BusStopRoutes from '../data/routes.json'
+import BangaloreRegionBoundaries from '../data/bangalore_region_boundaries.json'
 
 import useSchools from '../hooks/useSchools'
 import useBangaloreMap from '../hooks/useBangaloreMap'
@@ -35,7 +36,7 @@ function BusRoutes() {
       .geoMercator()
       .translate([width / 2, height / 2])
       // scale to zoom on the center
-      .fitSize([width, height], BusStopRoutes)
+      .fitSize([width, height], BangaloreRegionBoundaries)
     const colorScale = d3
       .scaleLinear()
       .domain([0, maxDistance])

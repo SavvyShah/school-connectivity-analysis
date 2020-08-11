@@ -6,8 +6,7 @@
   height: 10;
 }
 #school-g {
-  transform: translate(-55px, -30px);
-  fill: rgba(0,200,0,0.2);
+  fill: rgba(0, 200, 0, 0.2);
 }
 h1,
 h2 {
@@ -17,9 +16,7 @@ h2 {
   width: 70vw;
   margin: auto;
 }
-#bus-routes > svg > g:nth-child(2) {
-  transform: translate(-100px, 50px);
-}
+
 h2 {
   font-weight: 500;
 }
